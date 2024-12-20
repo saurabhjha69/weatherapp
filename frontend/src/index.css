@@ -1,0 +1,238 @@
+
+.weather-card {
+  background-color: #212529;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.weather-card .info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.weather-card .info img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.weather-card .info h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.weather-card .info p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.weather-card .foot-info {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  border-top: 1px solid gray;
+}
+
+.weather-card .foot-info p {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  /* background-color: #0056b3; */
+}
+
+.weather-card .foot-info p b {
+  font-weight: bold;
+}
+
+.dashboard {
+  /* Overall layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.dashboard input[type="search"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.dashboard button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dashboard .user-history {
+  margin-top: 20px;
+}
+
+.dashboard .user-history p {
+  margin: 5px 0;
+}
+
+.history-container {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.history-table thead {
+  background-color: #f4f4f4;
+}
+
+.history-table th,
+.history-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.history-table th {
+  font-weight: bold;
+}
+
+.history-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.history-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.no-history {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+/* General container styling */
+.container, .register-container {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light and dark theme variables */
+:root {
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --form-background: #fff;
+  --input-background: #f2f2f2;
+  --input-border: #ccc;
+  --button-background: #007bff;
+  --button-hover: #0056b3;
+  --error-color: #ff4d4d;
+}
+
+
+
+/* Login form styling */
+.login-form ,.register-form{
+  background-color: var(--form-background);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title, .register-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Form group */
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.form{
+  padding: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-background);
+  color: var(--text-color);
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--button-background);
+}
+/* .submit-btn{
+  display: flex;
+  width: 100%;
+  background-color: #0056b3;
+} */
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--button-background);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+}
+
+.error {
+  color: red;
+}
